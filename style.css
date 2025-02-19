@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+body{
+
+  font-family: "Poppins", serif;
+    font-style: normal;
+  }
+
+
+
+
+.mainContainer {
+  height: auto;
+  width: 100%;
+}
+.nav-div {
+  height: 13%;
+  width: 100%;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0dcdc;
+  flex-wrap: wrap;
+padding: 0.4rem;
+}
+
+/* 1 div */
+
+.logo-div {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.mainLogo {
+  width: 58px;
+;
+}
+.location {
+
+  width: 4rem;
+  background-color: rgb(223, 245, 255);
+  border-radius: 1.5rem;
+  height: 2.3rem;
+  text-align: center;
+  padding: 0.4rem 0rem;
+  color: dodgerblue;
+}
+
+/* 2 div */
+
+.navbar-toggler {
+  margin-left: 50px; 
+}
+
+.navbar-collapse {
+  text-align: right; 
+}
+
+/* General styles */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  list-style: none;
+
+;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: #030303;
+  font-size: 20px;
+font-weight: 600;
+
+}
+
+.nav-items li a:hover{
+  color: #007bff;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-icon i {
+  font-size: 25px;
+  cursor: pointer;
+  color: #1a1717;
+}
+
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+
+  transition: all 0.3s ease; 
+  padding-top: 20px;
+}
+
+.side-menu .close-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.side-menu .close-btn i {
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.side-menu ul li a:hover {
+  color: #004274;
+}
+
+/* 3 div */
+
+.nav-button {
+  margin: 0.5rem;
+  width: 22%;
+  height: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(189, 183, 195);
+  border-radius: 50px;
+  background-color: rgb(241, 241, 241);
+}
+
+.nav-button img {
+  width: 15px;
+}
+
+.delivery {
+  height: 3rem;
+  width: 7rem;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 0.4rem 0rem;
+  text-align: center;
+}
+
+.Collection {
+  height: 3rem;
+  width: 7rem;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+  border-radius: 25px;
+  color: #007bff;
+  padding: 0.4rem 0rem;
+}
+
+.col-text {
+  font-size: 10px;
+}
+.Collection:hover {
+  background-color: #ffffff;
+}
+.delivery:hover {
+  background-color: #ffffff;
+}
+
+
+
+@media (max-width: 768px) {
+  .nav-div {
+    display: flex;
+    flex-wrap: wrap;
+    height: 20%;
+    border: none;
+
+  }
+
+  .logo-div,
+  .nav-main {
+    width: 40%;
+    height: 25%;
+    margin: 0.5rem;
+   
+  }
+
+  .nav-button {
+    width: 85%;
+    height: 35%;
+
+  }
+
+  .logo-div {
+    justify-content: flex-start;
+    gap: 1.3rem;
+  
+  }
+  .nav-main {
+    justify-content: flex-end;
+  }
+  .menu-icon i {
+    font-size: 15px;
+  }
+section{
+  width: 100%;
+  height: 0%;
+  border-bottom: 1px solid #e0dcdc;
+}
+  .mainLogo {
+    width: 54px;
+  }
+
+ 
+
+  .nav-button img {
+    width: 20px;
+  }
+  .nav-items {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+
+}
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1224px) {
+ 
+.nav-div{
+  height: 8%;
+
+}
+
+  .logo-div{
+width: 20%;
+;
+  }
+  .nav-main {
+  width: 40%;
+
+  }
+
+  .nav-items { 
+width: 100%;
+  }
+
+  .nav-button {
+    width: 30%;
+  }
+  
+  .nav-items li a {
+    font-size: 20px;
+  }
+  section{
+    display: none;
+  }
+}
+
+/* ******************************* */
+
+.poster-main-div {
+  height: 120vh;
+
+  background-image: url("images/poster-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  z-index: 1;
+}
+
+.poster-div {
+  width: 100%;
+  height: 100%;
+
+
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.poster-data {
+  text-align: center;
+ 
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+
+  flex-wrap: wrap;
+}
+
+.poster-text {
+  font-size: 40px;
+  width: 55%;
+ ;
+  padding: 0 0 16px;
+
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 500;
+  margin-top: 2rem 2rem;
+  color: #ffffff;
+}
+
+.poster-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  gap: 6%;
+  position: relative;
+
+}
+
+.poster-form input[type="text"] {
+  padding: 1rem 2rem;
+  font-size: 16px;
+
+  border-radius: 30px;
+  outline: none;
+  width: 85%;
+  border: none;
+
+}
+.poster-form i {
+  position: absolute;
+  top: 46%;
+
+  left: 1.3rem;
+  transform: translateY(-50%);
+  color: #5fb4e9;
+  font-size: 17px;
+  
+}
+
+.poster-form input[type="text"]::placeholder {
+  color: #aaa;
+  font-family: "poppins";
+  padding-left: 1rem;
+}
+
+.poster-form button {
+  padding: 1rem 2.7rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  background-color: #00aaff;
+  color: white;
+  cursor: pointer;
+  font-family: "poppins";
+  transition: background-color 0.3s ease;
+}
+
+.poster-form button:hover {
+  background-color: #0077cc;
+}
+
+.poster-image {
+
+
+  position: relative;
+}
+
+.poster-image {
+  position: absolute;
+  top: 14%;
+  right: 5%;
+}
+
+.home-image img {
+  width: 500px;
+
+}
+.fix-icon{
+  height: 10%;
+  width: 4.5%;
+background-color: rgb(1,158,227);
+position: fixed;
+top: 85%;
+right: 3%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 100px;
+}
+
+
+.fix-icon i{
+
+color: #f3f4f5;
+font-size: 18px;
+
+}
+
+
+@media (max-width: 768px) {
+  .poster-main-div{
+    height: auto;
+  }
+  .poster-main-div{
+   display: none;
+  }
+}
+
+
+
+  @media (max-width: 990px) {
+    .poster-main-div{
+      height: 50vh;
+    }
+
+
+    .poster-image .home-image img {
+      display: none;
+    }
+    
+    .poster-text {
+    width: 100%;
+    }
+    
+    .poster-form {
+       width: 100%;
+    }
+
+  }
